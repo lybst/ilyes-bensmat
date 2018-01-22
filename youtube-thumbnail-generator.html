@@ -1,0 +1,37 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>YouTube Thumbnail Generator</title>
+<link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet'/>
+<link rel="stylesheet" type="text/css" href="https://rawgit.com/lybst/ilyes-bensmat/master/styleyt.css">
+<link href="https://cdn.rawgit.com/lybst/ilyes-bensmat/188cf710/neo.css">
+</head>
+<body>
+<div id="page_content">
+<h1>YouTube Thumbnail Generator</h1>
+<p>By <a href="http://www.aetemplates.org" title="AE Templates">AE Templates</a></p>
+  <form>
+    <div class="form-group">
+        <label for="videoID" class="example">Example link : <span class="ex-text">https://www.youtube.com/watch?v=</span><b>eC-F_VZ2T1c</b></label>
+        <input type="text" class="form-control" id="videoID" placeholder="Place the video ID here" />
+    </div>
+</form>
+    <div class="get">
+<button class="btn btn-primary" id="get-button" type="submit" onclick='getThumbs()'>Get a thumbnail</button>
+            </div>
+<div id="container">
+    <button type="button" class="btn btn-danger" onClick="window.location.href=window.location.href">Get another thumbnail</button>
+<div id="thumbnail_container"></div>
+
+</div>
+<br>
+<div class="footer">
+All Rights Reserved <a href="http://www.aetemplates.org" target="_blank" rel="dofollow">AE Templates</a>
+</div>
+</div>
+
+
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js'></script>
+<script type='text/javascript' src='https://rawgit.com/lybst/ilyes-bensmat/master/ytg-script.js'></script>
+</body>
+</html>
