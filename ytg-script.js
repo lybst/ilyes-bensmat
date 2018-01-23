@@ -21,7 +21,6 @@ var update = function() {
         $.each(thumbnail_list, function(){
             var image_url = this.replace('[video-id]', video_id);
             html = html + '<div class="image-wrapper"><img src="' + image_url + '" /></div>';
-            html = html + '<div class="caption"><p><strong>Style : </strong> ' + this + '</p>';
             html = html + '<p><strong>Image Link : </strong> ' + image_url + '</div>';
         });
         
