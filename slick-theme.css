@@ -2,18 +2,18 @@
 /* Slider */
 .slick-loading .slick-list
 {
-    background: #fff url('./ajax-loader.gif') center center no-repeat;
+    background: #fff url('https://i.imgur.com/ImMRPVW.gif') center center no-repeat;
 }
 
 /* Icons */
 @font-face
 {
-    font-family: 'slick';
+    font-family: 'bein-normal';
     font-weight: normal;
     font-style: normal;
 
-    src: url('./fonts/slick.eot');
-    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
+    src: url('https://www.fontstatic.com/f=bein-normal');
+    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
 }
 /* Arrows */
 .slick-prev,
