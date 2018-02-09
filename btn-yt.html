@@ -1,0 +1,57 @@
+<style class="cp-pen-styles">#btn--yp {
+  box-sizing: content-box;
+  position: fixed;
+  z-index: 9;
+  bottom: 1rem;
+  right: 1rem;
+  border: solid 1rem transparent;
+  width: 4.625rem;
+  height: 3.25rem;
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/2017/icon-yp.svg) 50%/cover content-box;
+  text-indent: 200vw;
+  text-shadow: none;
+  filter: grayscale(1) drop-shadow(0 0 1px #e8e0e0);
+  transition: .5s;
+  white-space: nowrap;
+}
+#btn--yp:before {
+  box-sizing: inherit;
+  position: absolute;
+  left: 0;
+  bottom: 100%;
+  margin: 1rem -.5rem;
+  padding: .5rem;
+  width: 100%;
+  border-radius: 5px;
+  background: #e8e0e0;
+  color: #000;
+  font: 1rem/1.25rem trebuchet ms, sans-serif;
+  text-align: center;
+  text-decoration: none;
+  text-indent: 0vw;
+  white-space: normal;
+  animation: float 1s ease-in-out infinite alternate;
+  content: attr(data-txt);
+}
+#btn--yp:hover, #btn--yp:focus {
+  outline: none;
+  filter: grayscale(0) drop-shadow(0 0 1px crimson);
+}
+
+@keyframes float {
+  to {
+    transform: translateY(0.75rem);
+  }
+</style>
+<script>
+var TXT = 'Watch my last video',
+    _LNK = document.createElement('a');
+
+_LNK.textContent = _LNK.dataset.txt = TXT;
+_LNK.href = 'https://youtu.be/' + ID;
+_LNK.setAttribute('target', '_blank');
+document.body.appendChild(_LNK);
+_LNK.setAttribute('id', 'btn--yp');
+</script>
+
+<a data-txt="Watch my last video" href="https://www.youtube.com/watch?v=4xJo5AG_zCk" target="_blank" id="btn--yp">Watch my last video</a>
